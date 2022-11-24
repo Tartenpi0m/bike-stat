@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  	<head>
+		<meta charset="utf-8">
+		<title>Velo stat</title>
+		<link rel="stylesheet" href="style.css">
+		<script type="text/javascript" src="/eel.js"></script>
+		<script type="text/javascript" src="/static_web/function.js"></script>
+	</head>
+	<body>
+
+		<div id="main_div">
+			<script>
+				async function start() {
+					let stat = await eel.stat_or_tour()()
+					show_div_dashboard(true, stat);	
+				}
+
+				start();
+				
+				</script>
+
+		</div>
+
+	</body>
+</html>

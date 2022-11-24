@@ -1,0 +1,12 @@
+DISTANCE_TOUR = 3010
+DISTANCE_ALLEZ = 44520
+DISTANCE_RETOUR = DISTANCE_ALLEZ
+DIV_DIR = "./static_web/div/"
+PAGE1 = "div_dashboard.html"          #Tour number page
+PAGE1_SUBJOUR = "div_stat_jour.htlm"
+PAGE2 = "div_complete_form.html"    #Data filling page
+PAGE2_SUB = "div_tour_input.html"   #Tour filling div
+DATABASE = './user_data.json'
+SIMPLE_FORM = "div_simple_tour_form.html"
+DIV_STAT = "div_stat.html"
+CACHE = "./cache/"

@@ -1,0 +1,50 @@
+<div>
+    <div>
+        <span title="Temps (min:sec) pour l'allez.">
+            <label for="go_time">Allez : </label>
+            <input type="time" id="go_time" min="00:00:00" step=1 value="00:00:00">
+        </span>
+    </div>
+
+    {div_tour_input}
+
+    <div>
+        <span title="Temps (min:sec) pour le retour.">
+            <label for="return_time">Retour : </label>
+            <input type="time" id="return_time" min="00:00:00" step=1 value="00:00:00">
+        </span>
+    </div>
+</div>
+
+<div>
+    <div>
+        <label for="date_input">Jour de la sortie : </label>
+        <input type="date" id="date_input">
+    </div>
+
+    <div>    
+        <span title="La distance par défault est celle d'un tour au polygon de Vincennes.">
+            <label for="distance_tour_input">Distance d'un tour : </label>
+            <input type="number" id="distance_tour_input" value="{distance_tour}">
+        </span>
+    </div>
+
+    <div>
+        <div>
+            <span title="La distance par défault correspond à l'itinéraire allez pris le plus souvent entre la maison et le polygône de Vincennes.">
+                <label for="distance_allez_input">Distance allez</label>
+                <input type="number" id="distance_allez_input" value="{distance_allez}">
+            </span>
+        </div>  
+        <div>
+            <span title="La distance par défault correspond à l'itinéraire retour pris le plus souvent entre la maison et le polygône de Vincennes.">
+                <label for="distance_retour_input">Distance retour</label>
+                <input type="number" id="distance_retour_input" value="{distance_retour}">
+            </span>
+        </div>   
+        
+    </div>
+</div>
+<div>
+    <input type="button" value="Validez" onclick="send_data()">
+</div>

@@ -1,0 +1,29 @@
+
+
+
+<div id="stat_jour">
+    <div id="graph_jour">
+        <img src="/cache/jour.png" alt="Pas encore de sortie aujourd'hui">
+    </div>
+</div>
+
+<div id = stat_periode>
+    <div id="graph_period">
+        <img src="/cache/distance.png" id="graph_period_img" alt="Pas encore de sortie enregistré">
+    </div>
+</div>
+
+<div id="ajout">
+    <div id="ajout_tour">
+        <label for="nb_tour">Ajoutez une sortie au polygône.<br> Nombre de tours : </label>
+        <input type="number" id="nb_tour" min="1", value="1">
+        <input type="button" id="nb_tour_button" value="Validez" onclick="show_div_complete_form()">
+    </div>
+    <div id="ajout_simple">
+        <label for="simple_tour_button">Ajoutez une sortie simple</label>
+        <input type="button" id="simple_tour_button" value="Ajoutez" onclick="show_div_simple_tour_form()">
+    </div>
+
+</div>
+
+
